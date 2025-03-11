@@ -1,4 +1,4 @@
-class conductor < Formula
+class Conductor < Formula
   desc "Conductor OSS Server"
   homepage "https://github.com/conductor-oss/conductor"
   url "https://github.com/conductor-oss/conductor/releases/download/v3.22.0-alpha1/conductor-server-lite-standalone.jar"
