@@ -5,7 +5,7 @@ class Conductor < Formula
   sha256 "09994dc9e02a9210f3204b396262eda61ccbca97272258ed461377e294511ca7"
   license "Apache 2.0"
 
-  depends_on "openjdk"
+  depends_on "openjdk@17"
 
   def install
     libexec.install "conductor-server-lite-standalone.jar"
