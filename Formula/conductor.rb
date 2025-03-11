@@ -1,5 +1,5 @@
-class Yourapp < Formula
-  desc "Your Boot JAR Application"
+class conductor < Formula
+  desc "Conductor OSS Server"
   homepage "https://github.com/conductor-oss/conductor"
   url "https://github.com/conductor-oss/conductor/releases/download/v3.22.0-alpha1/conductor-server-lite-standalone.jar"
   sha256 "09994dc9e02a9210f3204b396262eda61ccbca97272258ed461377e294511ca7"
@@ -9,7 +9,7 @@ class Yourapp < Formula
 
   def install
     libexec.install "conductor-server-lite-standalone.jar"
-    (bin/"yourapp").write <<~EOS
+    (bin/"conductor").write <<~EOS
       #!/bin/bash
       exec java -jar #{libexec}/conductor-server-lite-standalone.jar "$@"
     EOS
