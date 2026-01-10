@@ -4,6 +4,7 @@ class Conductor < Formula
   url "https://github.com/conductor-oss/conductor/releases/download/v3.21.23/conductor-server-lite-standalone.jar"
   sha256 "b1ca967cd2f122de88a9d2d75b818498d88a0189cc590dd82a1489a83db6c372"
   license "Apache 2.0"
+  version "3.21.23"
 
   depends_on "openjdk@21"
 
