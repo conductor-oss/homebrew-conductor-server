@@ -1,11 +1,11 @@
 class Conductor < Formula
   desc "Conductor OSS Server"
   homepage "https://github.com/conductor-oss/conductor"
-  url "https://github.com/conductor-oss/conductor/releases/download/v3.22.0-alpha1/conductor-server-lite-standalone.jar"
-  sha256 "09994dc9e02a9210f3204b396262eda61ccbca97272258ed461377e294511ca7"
+  url "https://github.com/conductor-oss/conductor/releases/download/v3.21.23/conductor-server-lite-standalone.jar"
+  sha256 "b1ca967cd2f122de88a9d2d75b818498d88a0189cc590dd82a1489a83db6c372"
   license "Apache 2.0"
 
-  depends_on "openjdk@17"
+  depends_on "openjdk@21"
 
   def install
     libexec.install "conductor-server-lite-standalone.jar"
