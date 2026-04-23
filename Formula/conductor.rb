@@ -18,6 +18,7 @@ class Conductor < Formula
   end
 
   test do
-    system "#{bin}/conductor", "--version"
+    assert_predicate bin/"conductor", :executable?
+    assert_predicate libexec/"conductor-lite-3.23.0.jar", :exist?
   end
 end
